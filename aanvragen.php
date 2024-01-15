@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!-- html template -->
 <!DOCTYPE html>
 <html>
@@ -24,3 +25,95 @@
     </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buurtbag Aanvragen</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Bootstrap if needed -->
+</head>
+<style>
+    @font-face {
+        font-family: 'RocaOne-Rg';
+        src: url('RocaOne-Rg.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    * {
+        font-family: 'RocaOne-Rg';
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(238, 236, 222);
+    }
+
+    .title, .paragraph {
+        color: rgb(21, 102, 105);
+        text-align: center;
+        font-size: 75px;
+        margin-top:150px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        font-family: 'RocaOne-Rg', sans-serif;
+        font-weight: 800;
+        font-size: 25px;
+        color: #fff;
+        background-color: #156669;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        text-transform: lowercase;
+        transition: 525ms;
+    }
+
+    .btn:hover {
+        padding: 10px 19px;
+        transform: translateY(-5px);
+        background-color: #156669;
+        color: #ffffff;
+    }
+
+    .bag {
+        display: block;
+        margin-left: auto;
+        margin-right: 35%;
+        width: 300px;
+        height: 350px;
+    }
+
+</style>
+<body>
+    <strong><h1 class="title">Aanvraagpagina voor Buurtbag</h1></strong>
+    <p class="paragraph">We zijn verheugd dat je geinteresseerd bent om deze speciale tas vold leuke goodies te ontvragen.<br>
+    Vul alsjeblieft het onderstaande formulier in, zodat we ervoor kunnen zorgen dat de Buurtbag op de juiste plek belandt.</p>
+    <!-- Generate a button with the text "Aanvragen" and link it to a page -->
+    <!-- create a form -->
+    <div class="btn-container">
+        <button class="btn" type="submit" name="aanvragen">Aanvragen</button>
+    </div>
+    <div>
+        <img class="bag" src="bag.png" alt="Buurtbag">
+    </div>
+</body>
+</html>
+>>>>>>> Stashed changes
