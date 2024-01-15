@@ -14,6 +14,7 @@
     <div class="text">
     <h1 class>Buurtbag aanvragen</h1>
     <strong>Uniek kans om de Buurtbag aan te vragen</strong>
+    <p>De Buurtbag zit boordevol leuke goodies en is gehuild in een trendy tas met een geografische code die trots laat zien dat jullie thuis zijn in Dedemsvaart.php 
         Deze tas is niet zomaar een tasl het is een speciale manier om nieuwe gezichten te verwelkomen en de gemeenschapsbanden te versterken.
 
         Dus, of je nu nieuw bent in de buurt of hier al langere tijd woont, de Buurtbag is er voor jou!
