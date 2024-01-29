@@ -1,36 +1,8 @@
+<?php include 'config.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< Updated upstream
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- link bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- link font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-    <div class="left-side">
-        <h1 class="title">Bloemenbuurt <br> Whatsapp</h1>
-    </div>
-    <div class="right-side">
-        <!-- ... (your existing HTML) ... -->
-<div class="inlog-container">
-    <h1 class="title">right side</h1>
-    <form action="login.php" method="post">
-        <input type="text" name="username" placeholder="Username" required> <br>
-        <input type="password" name="password" placeholder="Password" required><br>
-        <a href="aanvragen.php" type="button"> Aanvraag </a> <br>
-    </form>
-</div>
-<!-- ... (your existing HTML) ... -->
-
-        <img src="Flowers.png" alt="Image" class="bottom-right-image">        
-    </div>
-
-</body>
-</html>
-=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buurtbag Aanvragen</title>
@@ -38,72 +10,7 @@
     <!-- Link Bootstrap if needed -->
 </head>
 <style>
-    @font-face {
-        font-family: 'RocaOne-Rg';
-        src: url('RocaOne-Rg.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
->>>>>>> Stashed changes
-
-    * {
-        font-family: 'RocaOne-Rg';
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background-color: rgb(238, 236, 222);
-    }
-
-    .title, .paragraph {
-        color: rgb(21, 102, 105);
-        text-align: center;
-        font-size: 75px;
-        margin-top:150px;
-    }
-
-    .paragraph {
-        font-size: 20px;
-        margin: 20px;
-    }
-
-    .btn-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn {
-        font-family: 'RocaOne-Rg', sans-serif;
-        font-weight: 800;
-        font-size: 25px;
-        color: #fff;
-        background-color: #156669;
-        padding: 10px 30px;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        text-transform: lowercase;
-        transition: 525ms;
-    }
-
-    .btn:hover {
-        padding: 10px 19px;
-        transform: translateY(-5px);
-        background-color: #156669;
-        color: #ffffff;
-    }
-
-    .bag {
-        display: block;
-        margin-left: auto;
-        margin-right: 35%;
-        width: 300px;
-        height: 350px;
-    }
-
+    
 </style>
 <body>
     <strong><h1 class="title">Buurtbag Aanvragen</h1></strong>

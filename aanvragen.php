@@ -1,31 +1,5 @@
-<<<<<<< Updated upstream
-<!-- html template -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- link bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- link font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<!-- body template -->
-<body style="background-color:rgb(238,236,222);">
-    <div class="text">
-    <h1 class>Buurtbag aanvragen</h1>
-    <strong>Uniek kans om de Buurtbag aan te vragen</strong>
-    <p>De Buurtbag zit boordevol leuke goodies en is gehuild in een trendy tas met een geografische code die trots laat zien dat jullie thuis zijn in Dedemsvaart.php 
-        Deze tas is niet zomaar een tasl het is een speciale manier om nieuwe gezichten te verwelkomen en de gemeenschapsbanden te versterken.
+<?php include 'config.php'; ?>
 
-        Dus, of je nu nieuw bent in de buurt of hier al langere tijd woont, de Buurtbag is er voor jou!
-        Aarzel niet om je Buurtbag aan te vragen en ontdek de verassingen die op je wachten. Samen maken we de Bloemenbuurt een nog waarmee en gezelligere plek!
-    </p>
-    <button type="button" class="btn btn-primary">Aanvragen</button>
-    </div>
-</body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,84 +10,190 @@
     <!-- Link Bootstrap if needed -->
 </head>
 <style>
-    @font-face {
-        font-family: 'RocaOne-Rg';
-        src: url('RocaOne-Rg.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
+/* Font face */
+@font-face {
+    font-family: 'RocaOne-Rg';
+    src: url('RocaOne-Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-    * {
-        font-family: 'RocaOne-Rg';
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-        background-color: rgb(238, 236, 222);
-    }
+/* Body styles */
+body {
+    background-color: rgb(238, 236, 222);
+}
 
-    .title, .paragraph {
-        color: rgb(21, 102, 105);
-        text-align: center;
-        font-size: 75px;
-        margin-top:150px;
-    }
+/* Title and paragraph styles */
+.title {
+    font-family: 'RocaOne-Rg';
+    font-size: 40px;
+    color: rgb(21, 102, 105);
+    text-align: center;
+    margin-top: 80px;
+}
 
-    .paragraph {
-        font-size: 20px;
-        margin: 20px;
-    }
+.paragraph {
+    font-family: 'RocaOne-Rg';
+    font-size: 20px;
+    color: rgb(21, 102, 105);
+    text-align: center;
+    margin: 20px;
+}
 
-    .btn-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+/* Button styles */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .btn {
-        font-family: 'RocaOne-Rg', sans-serif;
-        font-weight: 800;
-        font-size: 25px;
-        color: #fff;
-        background-color: #156669;
-        padding: 10px 30px;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        text-transform: lowercase;
-        transition: 525ms;
-    }
+.btn {
+    font-family: 'RocaOne-Rg', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: #fff;
+    background-color: #156669;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: 525ms;
+}
 
-    .btn:hover {
-        padding: 10px 19px;
-        transform: translateY(-5px);
-        background-color: #156669;
-        color: #ffffff;
-    }
+.btn:hover {
+    padding: 10px 19px;
+    transform: translateY(-5px);
+    background-color: #156669;
+    color: #ffffff;
+}
 
-    .bag {
-        display: block;
-        margin-left: auto;
-        margin-right: 35%;
-        width: 300px;
-        height: 350px;
+/* Bag image styles */
+.bag {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 350px;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: #156669;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80%; /* Adjusted for mobile */
+    margin: 0 auto; /* Center the form on all screens */
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Full width on mobile */
+}
+
+input[type="submit"] {
+    background-color: #fff;
+    color: #156669;
+    cursor: pointer;
+}
+
+form label, form input, form select {
+    font-size: 20px; /* Adjust the font size as needed */
+    font-family: 'RocaOne-Rg', sans-serif;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    /* Adjust styles for tablets and larger screens */
+    .form-container {
+        width: 60%;
     }
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Adjust styles for medium desktop screens */
+    .form-container {
+        width: 40%;
+    }
+    .title {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Adjust styles for large desktop screens */
+    .form-container {
+        width: 25%;
+    }
+    .title {
+        font-size: 50px;
+    }
+}
+
+/* ---------------------------------------------------------- */
+
+
+
 
 </style>
 <body>
     <strong><h1 class="title">Aanvraagpagina voor Buurtbag</h1></strong>
-    <p class="paragraph">We zijn verheugd dat je geinteresseerd bent om deze speciale tas vold leuke goodies te ontvragen.<br>
+    <p class="paragraph">Welkom bij de Buurtbag-aanvraag voor de Bloemenbuurt!<br> We zijn verheugd dat je geïnteresseerd bent om deze speciale tas vol leuke goodies te ontvangen.<br>
     Vul alsjeblieft het onderstaande formulier in, zodat we ervoor kunnen zorgen dat de Buurtbag op de juiste plek belandt.</p>
-    <!-- Generate a button with the text "Aanvragen" and link it to a page -->
-    <!-- create a form -->
-    <div class="btn-container">
-        <button class="btn" type="submit" name="aanvragen">Aanvragen</button>
+
+    <div class="row"> <!-- Add this Bootstrap row -->
+        <div class="col-md-6 offset-md-3"> <!-- Adjust the column size and offset as needed -->
+            <div class="form-container">
+            <form method="post" action="done.php">
+    <label for="name">Naam:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="address">Adres:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="email">E-mailadres:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="membership">Ben je nieuw in de buurt of woon je hier al een tijdje?</label>
+    <select id="membership" name="membership">
+        <option value="yes">Ja Ik ben nieuw in de buurt</option>
+        <option value="no">Nee Ik woon hier al een tijdje</option>
+    </select>
+
+    <input type="submit" value="Submit">
+</form>
+
     </div>
+        </div>
+    </div>
+
     <div>
-        <img class="bag" src="bag.png" alt="Buurtbag">
+        <img class="bag" src="Flowers.png" alt="Flowers">
     </div>
 </body>
 </html>
->>>>>>> Stashed changes
